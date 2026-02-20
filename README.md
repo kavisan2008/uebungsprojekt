@@ -1,25 +1,36 @@
 # Tag 4 – Docker Projekt
 
 ## Projektbeschreibung
-Dieses Projekt zeigt eine einfache Website, die mit Docker gebaut wurde.
-Das Image wurde erstellt und in GitHub Container Registry (ghcr.io) gepusht.
+Dieses Projekt ist eine einfache Webanwendung mit eigenem Docker Image.
+Die Website enthält HTML, Styling und ein Bild (Logo).
+Das Image wurde mit Docker erstellt und auf GitHub Container Registry (ghcr.io) gepusht.
 Die Anwendung kann mit Docker Compose gestartet werden.
-Das Projekt dient als Beispiel für Deployment mit Docker.
-Die Website läuft auf Port 8088.
+Damit kann die Lehrperson das Projekt einfach lokal ausführen.
 
 ---
 
-## Starten der Anwendung
+## Installation (für Lehrperson)
 
-git clone https://github.com/kavisan2008/uebungsprojekt
+1. Repository klonen:
+
+git clone https://github.com/kavisan2008/uebungsprojekt.git
+
+2. In Projektordner wechseln:
+
 cd uebungsprojekt
+
+3. Container starten:
+
 docker compose -f docker-compose/docker-compose.yml up -d
 
-Website öffnen:
+4. Website öffnen:
+
 http://localhost:8088
 
 ---
 
-## Stoppen der Anwendung
+## Docker Image
 
-docker compose -f docker-compose/docker-compose.yml down
+Image befindet sich auf:
+
+ghcr.io/kavisan2008/tag4-web:v1
