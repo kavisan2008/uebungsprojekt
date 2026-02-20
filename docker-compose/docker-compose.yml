@@ -1,6 +1,7 @@
 version: "3.8"
 services:
   web:
-    image: ghcr.io/kavisan2008/tag4-web:v1
+    build: ..
+    image: tag4-web:local
     ports:
       - "8088:80"
